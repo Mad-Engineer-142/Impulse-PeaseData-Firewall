@@ -1,0 +1,9 @@
+sudo apt-get install -y build-essential libssl-dev libffi-dev python-dev python3-pip libxml2-dev libxslt-dev git
+
+sudo iptables -t mangle -A PREROUTING -i ens33 -p tcp --dport 8080 -j TEE --gateway 192.168.0.165
+sudo iptables -t mangle -A POSTROUTING -o ens33 -p tcp --sport 8080 -j TEE --gateway 192.168.0.165
+
+
+
+
+sudo apt-get install cmake make gcc g++ flex libfl-dev bison libpcap-dev libssl-dev python3 python3-dev swig zlib1g-dev

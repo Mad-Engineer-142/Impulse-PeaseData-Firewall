@@ -1,0 +1,4 @@
+markupsafe==2.0.1
+mitmproxy==6.0.2
+git+https://github.com/casics/nostril.git
+
